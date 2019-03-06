@@ -1,0 +1,33 @@
+{
+  "name": "Profile Labeller",
+  "version": "1.0",
+  "description": "Overlays a small label on web page to allow identification of profile",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "web_accessible_resources": [
+    "styles.css"
+  ],
+  "permissions": [
+    "declarativeContent",
+	"storage"
+  ],
+  "icons": {
+    "128": "label-128.png"
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}

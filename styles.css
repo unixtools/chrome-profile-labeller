@@ -1,0 +1,13 @@
+
+#profile_labeller_overlay {
+	font-size:12px;
+    font-family: Arial,x-locale-body,sans-serif;
+    background-color: white;
+    border: 1px dashed black;
+    color: blue;
+    padding: 0.1rem 0.2rem;
+    position: fixed;
+    right: 0px;
+    bottom: 2px;
+    z-index: 99999
+}
